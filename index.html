@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Studio</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body> 
+    <!--! Шапка сайта-->
+    <header class="header">
+            <div class="container">
+                <nav class="navigation">
+                    <a class="logo-primary link" href="./index.html" lang="en" > <span class="logo-accent">Web</span>Studio</a>
+                    <ul class="site-nav list">
+                        <li class="navigation-item"><a class="link current" href="./index.html" >Студия</a></li>
+                        <li class="navigation-item"><a class="link" href="./portfolio.html" >Портфолио</a></li>
+                        <li class="navigation-item"><a class="link" href="" >Контакты</a></li>
+                    </ul>
+                </nav>  
+                <ul class="contact-nav list">
+                    <li class="contact-item">
+                        <a class="mail link" href="mailto:info@devstudio.com" aria-label="отправить письмо">
+                            <svg class="icon-contact" width="16" height="12">
+                                <use href="./images/icons/sprite.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                            
+                    </li>
+                    <li class="contact-item">
+                        <a class="tel link" href="tel:+380961111111" aria-label="позвонить">
+                            <svg class="icon-contact" width="10" height="16">
+                                <use href="./images/icons/sprite.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+    <!--! Основное содержимое сайта-->
+    <main>
+        <!--Герой-->
+        <section class="hero overlay">
+            <div class="container"> 
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button class="button" type="button" >Заказать услугу</button> 
+            </div>   
+        </section>
+
+        <!--Преимущества-->
+        <section class="section traits">
+            <div class="container">
+                <!--Этот заголовок потом будет скрыт при помощи css-->
+                <h2 class="section-title visually-hidden">Преимущества</h2>
+                <ul class="features list">
+                    <li class="feature-item">
+                        <div class="feature-bcg">
+                            <svg class="icon-antenna" width="70" height="70">
+                                <use href="./images/icons/sprite.svg#antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Внимание к деталям</h3>
+                        <p class="feature-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-bcg">
+                            <svg class="icon-clock" width="70" height="70">
+                                <use href="./images/icons/sprite.svg#clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Пунктуальность</h3>
+                        <p class="feature-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-bcg">
+                            <svg class="icon-diagram" width="70" height="70">
+                                <use href="./images/icons/sprite.svg#diagram"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Планирование</h3>
+                        <p class="feature-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-bcg">
+                            <svg class="icon-astronaut" width="70" height="70">
+                                <use href="./images/icons/sprite.svg#astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title"> Современные технологии</h3>
+                        <p class="feature-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Чем занимаемся-->
+        <section class="section activity">
+            <div class="container">
+                <h2 class="section-title">Чем мы занимаемся</h2>
+                <ul class="services list">
+                    <li class="service-item"> <img src="./images/main-page/main/workingprocess1.jpg" alt="веб-разработка" width="370" height="294"> </li>
+                    <li class="service-item"> <img src="./images/main-page/main/workingprocess2.jpg" alt="мобильная адаптация сайта" width="370" height="294"></li>
+                    <li class="service-item"> <img src="./images/main-page/main/workingprocess3.jpg" alt="графический дизайн" width="370" height="294"></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Команда-->
+        <section class="section staff">
+            <div class="container">
+                <h2 class="section-title">Наша команда</h2>
+                <ul class="team list">
+                    <li class="team-member">
+                        <img class="member-photo" src="./images/main-page/main/staff1.jpg" alt="бородатый мужчина в очках и бордовой рубашке" width="270" height="260">
+                        <div class="member-info">
+                            <h3 class="member-name">Игорь Демьяненко</h3>
+                            <p class="member-position" lang="en">Product Designer</p>
+                            <ul class="socials list">
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в instagram сотрудника"> 
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в twitter сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в facebook сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в linkedin сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-member">
+                        <img class="member-photo" src="./images/main-page/main/staff2.jpg" alt="светловолосая девушка в очках и костюме" width="270" height="260">
+                        <div class="member-info">
+                            <h3 class="member-name">Ольга Репина</h3>
+                            <p class="member-position" lang="en">Frontend Developer</p>
+                            <ul class="socials list">
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в instagram сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в twitter сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в facebook сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в linkedin сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-member">
+                        <img class="member-photo" src="./images/main-page/main/staff3.jpg" alt="улыбающийся парень в светлой рубашке" width="270" height="260">
+                        <div class="member-info">
+                            <h3 class="member-name">Николай Тарасов</h3>
+                            <p class="member-position" lang="en">Marketing</p>
+                            <ul class="socials list">
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в instagram сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в twitter сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в facebook сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в linkedin сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-member">
+                        <img class="member-photo" src="./images/main-page/main/staff4.jpg" alt="темноволосый парень в очках и черной футболки" width="270" height="260">
+                        <div class="member-info">
+                            <h3 class="member-name">Михаил Ермаков</h3>
+                            <p class="member-position" lang="en">UI Designer</p>
+                            <ul class="socials list">
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в instagram сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в twitter сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в facebook сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="network" href="" aria-label="перейти в linkedin сотрудника">
+                                        <svg class="icon-network" width="20" height="20">
+                                            <use href="./images/icons/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Постоянные клиенты-->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Постоянные клиенты</h2>
+                <ul class="clients list">
+                    <li class="client-item"> 
+                        <a class="client-link" href="" aria-label="перейти на сайт клиента"> 
+                            <svg class="client-logo" width="41" height="47">
+                                <use href="./images/icons/sprite.svg#client1"></use>
+                            </svg>
+                         </a>
+                    </li>
+                    <li class="client-item"> 
+                        <a class="client-link" href="" aria-label="перейти на сайт клиента"> 
+                            <svg class="client-logo" width="40" height="52">
+                                <use href="./images/icons/sprite.svg#client2"></use>
+                            </svg> 
+                        </a>
+                    </li>
+                    <li class="client-item"> 
+                        <a class="client-link" href="" aria-label="перейти на сайт клиента">
+                            <svg class="client-logo" width="44" height="41">
+                                <use href="./images/icons/sprite.svg#client3"></use>
+                            </svg> 
+                        </a>
+                    </li>
+                    <li class="client-item"> 
+                        <a class="client-link" href="" aria-label="перейти на сайт клиента"> 
+                            <svg class="client-logo" width="84" height="41">
+                                <use href="./images/icons/sprite.svg#client4"></use>
+                            </svg> 
+                        </a>
+                    </li>
+                    <li class="client-item"> 
+                        <a class="client-link" href="" aria-label="перейти на сайт клиента"> 
+                            <svg class="client-logo" width="63" height="45">
+                                <use href="./images/icons/sprite.svg#client5"></use>
+                            </svg> 
+                        </a>
+                    </li>
+                    <li class="client-item"> 
+                        <a class="client-link" href="" aria-label="перейти на сайт клиента"> 
+                            <svg class="client-logo" width="94" height="44" >
+                                <use href="./images/icons/sprite.svg#client6"></use> 
+                            </svg> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!--! Футер сайта-->
+    <footer class="footer">
+        <div class="container">
+            <div class="company-address">
+                <a class="logo-secondary link" href="./index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
+                <!--Адресс-->
+                <address class="address">
+                    <ul class="footer-contact list">
+                        <li><a class="location link" href="https://goo.gl/maps/PGMQsES6wP2p5XiY7" target="_blank"
+                                rel="noopener noreferrer">
+                                г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li><a class="mail link" href="mailto:info@example.com">info@example.com</a></li>
+                        <li><a class="tel link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="company-socials">
+                <b class="join">присоединяйтесь</b>
+                <ul class="socials list">
+                    <li class="social-item">
+                        <a class="network firm" href="" aria-label="перейти в instagram компании">
+                            <svg class="icon-network" width="20" height="20">
+                                <use href="./images/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item"> 
+                        <a class="network firm" href="" aria-label="перейти в twitter компании">
+                            <svg class="icon-network" width="20" height="20">
+                                <use href="./images/icons/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item"> 
+                        <a class="network firm" href="" aria-label="перейти в facebook компании">
+                            <svg class="icon-network" width="20" height="20">
+                                <use href="./images/icons/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item"> 
+                        <a class="network firm" href="" aria-label="перейти в linkedin компании">
+                            <svg class="icon-network" width="20" height="20">
+                                <use href="./images/icons/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
+ 
+
+
+
+
