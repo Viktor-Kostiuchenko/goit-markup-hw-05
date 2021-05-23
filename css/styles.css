@@ -11,24 +11,36 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+
+  --header-border-color: #ececec;
+
   --logo-color: #000000;
+
   --hero-overlay-gradient: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
+
   --button-hover-color: #188ce8;
   --button-hover-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
   --primary-bcg-color: #f5f4fa;
   --secondary-bcg-color: #2f303a;
+
   --primary-icon-color: #afb1b8;
   --secondary-icon-color: #757575;
-  --footer-contact-color: rgba(255, 255, 255, 0.6);
+
+  --service-subtitle-bcg: rgba(47, 48, 58, 0.8);
+
   --team-member-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
   --network-firm-color: rgba(255, 255, 255, 0.1);
-  --header-border-color: #ececec;
+
   --portfolio-border-color: #eeeeee;
   --filter-btn-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 
   --project-card-shadow: rgba(0, 0, 0, 0.25);
+  --project-description-bcg: rgba(33, 150, 243, 0.9);
 
   --primary-font: Roboto, sans-serif;
   --logo-font: Raleway, sans-serif;
@@ -224,6 +236,24 @@ ol {
   fill: var(--accent-color);
 }
 
+.current {
+  position: relative;
+}
+
+.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  content: "";
+
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+
+  background-color: var(--accent-color);
+}
+
 /* ! ===================================END OF HEADER=================================== */
 
 /* ! =====================================FOOTER===================================== */
@@ -313,7 +343,7 @@ ol {
   text-transform: uppercase;
 }
 
-.overlay {
+.hero.overlay {
   height: 600px;
   max-width: 1600px;
   margin: 0 auto;
@@ -407,6 +437,29 @@ ol {
 
 .services > .service-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.service-thumb {
+  position: relative;
+}
+
+.service-subtitle {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+
+  color: var(--primary-white-color);
+  background-color: var(--service-subtitle-bcg);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /** Staff */
@@ -601,5 +654,32 @@ ol {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.project-thumb {
+  position: relative;
+}
+
+.project-description {
+  position: absolute;
+  display: block;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: var(--primary-white-color);
+  background-color: var(--project-description-bcg);
+
+  opacity: 0;
+}
+
+.project-card:hover .project-description {
+  opacity: 1;
 }
 /* ! ================================THE END OF PORTFOLIO.HTML================================ */
