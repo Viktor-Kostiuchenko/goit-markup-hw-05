@@ -1,9 +1,3 @@
-/* цвет основного текста #757575 */
-/* цвет текста заголовков #212121 */
-/* белый #FFFFFF  */
-/* акцент #2196F3 */
-/* цвет фона футера #2F303A; */
-
 :root {
   --item-gap: 30px;
 
@@ -11,37 +5,42 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-
-  --header-border-color: #ececec;
-
-  --logo-color: #000000;
-
-  --hero-overlay-gradient: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
-
-  --button-hover-color: #188ce8;
-  --button-hover-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
   --primary-bcg-color: #f5f4fa;
   --secondary-bcg-color: #2f303a;
-
   --primary-icon-color: #afb1b8;
   --secondary-icon-color: #757575;
 
+  /** header */
+  --header-border-color: #ececec;
+  --logo-color: #000000;
+
+  /** hero */
+  --hero-overlay-gradient: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
+  --button-hover-color: #188ce8;
+  --button-hover-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  --backdrop-bcg-color: rgba(0, 0, 0, 0.2);
+  --close-border-color: rgba(0, 0, 0, 0.1);
+  --close-icon-color: #000000;
+
+  /** services */
   --service-subtitle-bcg: rgba(47, 48, 58, 0.8);
 
+  /** staff */
   --team-member-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
+  /** footer */
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --network-firm-color: rgba(255, 255, 255, 0.1);
 
+  /**portfolio */
   --portfolio-border-color: #eeeeee;
   --filter-btn-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-
   --project-card-shadow: rgba(0, 0, 0, 0.25);
   --project-description-bcg: rgba(33, 150, 243, 0.9);
 
+  /** fonts */
   --primary-font: Roboto, sans-serif;
   --logo-font: Raleway, sans-serif;
 }
@@ -136,10 +135,16 @@ ol {
 }
 
 /* ! =====================================HEADER===================================== */
-.header {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
-}
+/* .header {
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  min-height: 80px;
+  width: 100%;
+  background-color: var(--primary-white-color);
+  z-index: 2;
+} */
 
 .header > .container {
   display: flex;
@@ -382,6 +387,55 @@ ol {
 .button:focus {
   background-color: var(--button-hover-color);
   box-shadow: var(--button-hover-shadow);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--backdrop-bcg-color);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-height: 581px;
+  min-width: 528px;
+  border-radius: 4px;
+
+  background-color: var(--primary-white-color);
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  border: 1px solid var(--close-border-color);
+  background-color: transparent;
+}
+
+.icon-close {
+  fill: var(--close-icon-color);
 }
 
 /** Section */
