@@ -46,6 +46,8 @@
 }
 
 body {
+  padding-top: 80px;
+
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: var(--primary-font);
@@ -135,16 +137,16 @@ ol {
 }
 
 /* ! =====================================HEADER===================================== */
-/* .header {
+.header {
   position: fixed;
-  
+
   top: 0;
   left: 0;
   min-height: 80px;
   width: 100%;
   background-color: var(--primary-white-color);
   z-index: 2;
-} */
+}
 
 .header > .container {
   display: flex;
