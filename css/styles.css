@@ -368,7 +368,7 @@ ol {
   margin: 0 auto;
   background-color: var(--secondary-bcg-color);
   background-image: linear-gradient(var(--hero-overlay-gradient)),
-    url(../images/main-page/main/hero.jpg);
+    url(../images/main-page/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
