@@ -1,4 +1,5 @@
-// *вот этот скрипт работает (взял его из вебинара Репеты)
+// *вот этот скрипт работает (взял его из вебинара Репеты). 
+// *Ментор Алена сказала что он тоже рабочий поэтому можно его и оставить, что я и сделал
 (() => {
       const refs = {
          openModalBtn: document.querySelector("[data-open-modal]"),
@@ -22,19 +23,14 @@
 })();
 
 
-// ! а вот этот скрипт, что нам дали в описании к дз№5 - не работает даже если поменять атрибуты в html
+// ! а вот этот скрипт, что нам дали в описании к дз№5 - не работает у меня даже если поменять атрибуты в html
 // ! с data-open-modal на data-modal-open
 // ! и
 // ! data-close-modal на data-modal-open
-// ? может ли это быть из-за того, что в первом скрипте используется строчка 
-// ? backdrop: document.querySelector("[data-backdrop]")
-// ? а во втором 
-// ? modal: document.querySelector('[data-modal]'),
-
 // (() => {
 //   const refs = {
 //     openModalBtn: document.querySelector('[data-modal-open]'),
-//     closeModalBtn: document.querySelector('[data-modal-open]'),
+//     closeModalBtn: document.querySelector('[data-modal-сlose]'),
 //     modal: document.querySelector('[data-modal]'),
 //   };
 
