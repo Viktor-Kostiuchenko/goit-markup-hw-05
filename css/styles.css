@@ -698,7 +698,7 @@ ol {
   overflow: hidden;
 }
 
-.project-description {
+.project-description-wrapper {
   position: absolute;
   display: block;
 
@@ -708,10 +708,6 @@ ol {
   height: 100%;
   padding: 63px 24px;
 
-  font-size: 18px;
-  line-height: 1.56;
-
-  color: var(--primary-white-color);
   background-color: var(--project-description-bcg);
 
   overflow: auto;
@@ -721,8 +717,15 @@ ol {
   transition: transform var(--duration-timing-function);
 }
 
-.project-card:hover .project-description,
-.project-card:focus .project-description {
+.project-description {
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: var(--primary-white-color);
+}
+
+.project-card:hover .project-description-wrapper,
+.project-card:focus .project-description-wrapper {
   transform: translateY(0%);
   opacity: 1;
 }
